@@ -5,6 +5,11 @@ function Recepie(props) {
     <div>
         <h1>{props.name}</h1>
         <p>{props.calories}</p>
+        <ol className='ingredients'>
+          {props.ingredients.map((item, key) => (
+            <li key={key}>{item}</li>
+          ))}
+        </ol>
         <img src={props.imgSrc} alt="recepie"></img>
     </div>
   )
