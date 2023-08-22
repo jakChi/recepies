@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    margin: tpx;
+}
+
+:root {
+    --body-color: black;
+    --text-color: red;
+    --recipe-card-col: green;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+.title {
+    text-align: center;
+    border: 2px solid blue;
+    border-bottom-color: red;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}  
+
+.recipes {
+    display: grid;
+}
+
+.recipe-card {
+    width: 40%;
+    border-radius: 15px;
+    background-color: var(--recipe-card-col);
+}
+
+.recipe-card > img {
+    width: 50%; 
+    border-radius: 30px;
+}
